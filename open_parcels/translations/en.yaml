@@ -1,0 +1,14 @@
+configuration:
+  log_level:
+    name: Log level
+    description: How much the server writes to the app's log.
+  public_url:
+    name: Public address
+    description: >-
+      Where Open Parcels is reachable from outside Home Assistant (for links in the calendar
+      feed), e.g. https://parcels.example.org. Leave empty if not needed.
+  quiet_window:
+    name: Night-time pause
+    description: Don't ask carriers for updates between midnight and 6 in the morning.
+network:
+  3000/tcp: Web UI and API outside Home Assistant (for the Open Parcels integration and other clients)
