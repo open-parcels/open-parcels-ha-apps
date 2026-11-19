@@ -1,7 +1,7 @@
 # Builds Open Parcels from a pinned commit of github.com/open-parcels/open-parcels, the same way
 # the project's own image is built, for the architecture Home Assistant runs on.
 ARG NODE_VERSION=26
-ARG OPENPARCELS_REF=2d5bd333204a1caac75a57de178e69d6e9885f64
+ARG OPENPARCELS_REF=6a5a505e222f49113caa82f1505f6bf3d99f7f39
 
 FROM node:${NODE_VERSION}-slim AS build
 ARG OPENPARCELS_REF
