@@ -18,11 +18,18 @@ ports_description:
   3000/tcp: Web UI and API outside Home Assistant (for the integration and other clients)
 startup: application
 boot: auto
+# Caches refill themselves and database copies are backups already: keep them out of Home
+# Assistant backups.
+backup_exclude:
+  - "open-parcels/images"
+  - "open-parcels/tiles"
+  - "open-parcels/collages"
+  - "open-parcels/backups"
 options:
   log_level: info
   public_url: ""
   quiet_window: true
 schema:
   log_level: list(fatal|error|warn|info|debug|trace)
-  public_url: str?
+  public_url: url?
   quiet_window: bool
