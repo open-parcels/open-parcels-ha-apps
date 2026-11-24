@@ -4,7 +4,7 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
-## Unreleased
+## 2.0.0-dev.20261124.3
 
 App only, same Open Parcels commit (`10d7e31`).
 
