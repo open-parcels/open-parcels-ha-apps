@@ -17,10 +17,12 @@ ingress_port: 8099
 panel_admin: true
 panel_icon: mdi:package-variant-closed
 panel_title: Parcels
-# Optional direct access (and the address for the Open Parcels integration), off by default.
+# Optional direct access for clients outside Home Assistant, off by default.
 ports:
   3000/tcp: null
 # The port description lives in translations/en.yaml.
+# Home Assistant restarts the app when the server stops answering (needs no open port and no auth).
+watchdog: http://[HOST]:[PORT:3000]/api/v1/health/ready
 # Announces the server to the Open Parcels integration (one-click setup).
 discovery:
   - open_parcels
