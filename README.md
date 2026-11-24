@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/open-parcels/open-parcels/master/docs/branding/banner-on-dark.png">
-    <img alt="Open Parcels" src="https://raw.githubusercontent.com/open-parcels/open-parcels/master/docs/branding/banner-on-light.png" width="640">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/open-parcels/open-parcels/8cf7a65/docs/branding/banner-on-dark.png">
+    <img alt="Open Parcels" src="https://raw.githubusercontent.com/open-parcels/open-parcels/8cf7a65/docs/branding/banner-on-light.png" width="640">
   </picture>
 </p>
 
@@ -17,9 +17,9 @@ Or: **Settings → Apps → App store → ⋮ → Repositories**, add
 
 | App | What it is |
 |---|---|
-| [Open Parcels](open_parcels) | The Open Parcels server with its web UI, built for `aarch64` and `amd64`. |
+| [Open Parcels](open_parcels) | The Open Parcels server with its web UI, prebuilt for `aarch64` and `amd64`. |
 
-The app builds Open Parcels from a pinned commit on your Home Assistant host, so the first
-installation takes a while (on a Raspberry Pi, about 15 minutes).
+Each app version runs a pinned commit of Open Parcels. Home Assistant downloads a prebuilt image,
+so installing and updating take seconds; what changed is in each app's `CHANGELOG.md`.
 
 > **Status:** early development, `2.0.0-dev`. Expect breaking changes.
