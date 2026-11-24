@@ -15,6 +15,9 @@ Assistant. Open it from the **Parcels** entry in the sidebar.
 The [Open Parcels integration](https://github.com/open-parcels/open-parcels-ha) puts parcels,
 orders and courier positions into Home Assistant. It talks to the server's API:
 
+Once the app runs, Home Assistant offers the integration under **Settings → Devices & services**
+(discovered): confirm it and you are done. To add it by hand instead:
+
 1. In Open Parcels, create an API token (**API tokens**, scopes read and write).
 2. Add the integration with the address `http://<hostname>:3000` and that token, where
    `<hostname>` is the app's **Hostname** shown on its Info page. Home Assistant reaches the app

@@ -1,5 +1,5 @@
 name: Open Parcels
-version: "2.0.0-dev.6a5a505"
+version: "2.0.0-dev.20261124"
 slug: open_parcels
 description: Self-hosted parcel and order tracking for every carrier, shop and mailbox.
 url: https://open-parcels.github.io
@@ -16,6 +16,9 @@ ports:
   3000/tcp: null
 ports_description:
   3000/tcp: Web UI and API outside Home Assistant (for the integration and other clients)
+# Announces the server to the Open Parcels integration (one-click setup).
+discovery:
+  - open_parcels
 startup: application
 boot: auto
 # Caches refill themselves and database copies are backups already: keep them out of Home
