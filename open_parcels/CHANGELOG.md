@@ -10,6 +10,7 @@ App only, same Open Parcels commit (`10d7e31`).
 
 - Home Assistant stops the app for a few seconds while it makes a backup, so the database copy is
   always consistent.
+- Home Assistant restarts the app when the server stops answering.
 - The **Parcels** panel is explicitly limited to Home Assistant administrators (it already was by
   default).
 - The image is built on a Node base image pinned by digest.
@@ -43,7 +44,7 @@ Open Parcels `5a60118` (77 commits after `6a5a505`). Security-relevant and behav
   enabled again.
 - Inbox fixes: STARTTLS is required, and an unreadable inbox no longer stops the server.
 - App: caches and database copies are kept out of Home Assistant backups, the public address is
-  checked in the options form, and Home Assistant restarts the app when it stops answering.
+  checked in the options form.
 
 ## 2.0.0-dev.6a5a505
 
