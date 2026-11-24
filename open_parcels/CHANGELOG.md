@@ -4,6 +4,17 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0-dev.20261124.5
+
+Open Parcels `fdb60e5` (compare `5ca291c...fdb60e5`).
+
+- **Breaking:** names follow the glossary (connections, tracking number, expected delivery,
+  receiving/sending). Update the Open Parcels integration to 0.6.0 together with this version; see
+  the server's CHANGELOG.md for API clients.
+- Orders from order emails (AliExpress, Temu, eBay, Steam, GOG, PayPal receipts and more), with
+  totals; digital orders shown without a parcel.
+- Optional fallback tracking through a universal-lookup service or 17TRACK.
+
 ## 2.0.0-dev.20261124.4
 
 Open Parcels `5ca291c` (compare `10d7e31...5ca291c`).
