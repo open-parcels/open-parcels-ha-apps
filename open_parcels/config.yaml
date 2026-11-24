@@ -1,8 +1,10 @@
 name: Open Parcels
-version: "2.0.0-dev.20261124"
+version: "2.0.0-dev.20261124.2"
 slug: open_parcels
 description: Self-hosted parcel and order tracking for every carrier, shop and mailbox.
 url: https://open-parcels.github.io
+# Prebuilt per version (amd64, aarch64); Home Assistant downloads it instead of building on the host.
+image: bluscream1/open-parcels-ha-app
 arch:
   - aarch64
   - amd64
@@ -30,7 +32,6 @@ backup_exclude:
   - "open-parcels/backups"
 options:
   log_level: info
-  public_url: ""
   quiet_window: true
 schema:
   log_level: list(fatal|error|warn|info|debug|trace)

@@ -1,7 +1,7 @@
 # Builds Open Parcels from a pinned commit of github.com/open-parcels/open-parcels, the same way
 # the project's own image is built, for the architecture Home Assistant runs on.
 ARG NODE_VERSION=26
-ARG OPENPARCELS_REF=5a601180610e2bf579d2a284c6032e36ed5ecad3
+ARG OPENPARCELS_REF=10d7e31368e014927638a00d9e1a48c77c1e6db2
 
 FROM node:${NODE_VERSION}-slim AS build
 ARG OPENPARCELS_REF
@@ -24,11 +24,12 @@ COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/server/package.json ./server/package.json
 COPY --from=build /app/server/dist ./server/dist
 COPY --from=build /app/web/dist ./web/dist
-COPY run.sh /run.sh
-RUN chmod 755 /run.sh
 
+# The server reads the app's options itself when Home Assistant's Supervisor starts it (supervised
+# mode). The data folder stays /data/open-parcels, where earlier versions kept it.
 ENV NODE_ENV=production \
     OPENPARCELS_PORT=3000 \
-    OPENPARCELS_INGRESS_PORT=8099
+    OPENPARCELS_INGRESS_PORT=8099 \
+    OPENPARCELS_DATA_DIR=/data/open-parcels
 
-CMD ["/run.sh"]
+CMD ["node", "/app/server/dist/main.js"]
