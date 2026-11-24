@@ -5,10 +5,10 @@ Assistant. Open it from the **Parcels** entry in the sidebar.
 
 ## First start
 
-1. Start the app and open **Parcels** in the sidebar. Home Assistant has already signed you in, so
+1. Start the app and open **Parcels** in the sidebar. Home Assistant has already logged you in, so
    no setup code is needed: choose the admin password.
-2. Add your connections: carrier and shop accounts, keyless tracking and inboxes (the **Sources**
-   page in this version). For something to look at first, add the **Demo shop** and **Demo
+2. Add your connections: carrier and shop accounts, keyless tracking and inboxes (the **Connections**
+   page). For something to look at first, add the **Demo shop** and **Demo
    courier**.
 
 The log also prints a **setup code** on the first start. It is only needed if you set Open Parcels

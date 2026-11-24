@@ -8,7 +8,7 @@ image: bluscream1/open-parcels-ha-app
 arch:
   - aarch64
   - amd64
-# The web UI opens in Home Assistant's sidebar; Home Assistant signs the user in.
+# The web UI opens in Home Assistant's sidebar; Home Assistant logs the user in.
 ingress: true
 # The server hard-codes the same port (APP_INGRESS_PORT); the Dockerfile sets it too.
 ingress_port: 8099
