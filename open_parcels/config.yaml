@@ -1,7 +1,7 @@
 name: Open Parcels
 version: "2.0.0-dev.20261124.2"
 slug: open_parcels
-description: Self-hosted parcel and order tracking for every carrier, shop and mailbox.
+description: Self-hosted parcel and order tracking for every carrier, shop and inbox.
 url: https://open-parcels.github.io
 # Prebuilt per version (amd64, aarch64); Home Assistant downloads it instead of building on the host.
 image: bluscream1/open-parcels-ha-app
@@ -10,19 +10,23 @@ arch:
   - amd64
 # The web UI opens in Home Assistant's sidebar; Home Assistant signs the user in.
 ingress: true
+# The server hard-codes the same port (APP_INGRESS_PORT); the Dockerfile sets it too.
 ingress_port: 8099
+# Every ingress request is an Open Parcels admin, so only Home Assistant administrators may see the
+# panel. Do not relax this.
+panel_admin: true
 panel_icon: mdi:package-variant-closed
 panel_title: Parcels
 # Optional direct access (and the address for the Open Parcels integration), off by default.
 ports:
   3000/tcp: null
-ports_description:
-  3000/tcp: Web UI and API outside Home Assistant (for the integration and other clients)
+# The port description lives in translations/en.yaml.
 # Announces the server to the Open Parcels integration (one-click setup).
 discovery:
   - open_parcels
-startup: application
-boot: auto
+# Stop the app while Home Assistant backs it up: a copy of the live SQLite database (WAL mode) can
+# miss or tear the latest writes. The pause takes seconds and the app starts again by itself.
+backup: cold
 # Caches refill themselves and database copies are backups already: keep them out of Home
 # Assistant backups.
 backup_exclude:
