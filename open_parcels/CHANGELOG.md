@@ -4,6 +4,17 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0-dev.20261124.4
+
+Open Parcels `5ca291c` (compare `10d7e31...5ca291c`).
+
+- The app's log level option now takes effect, and settings set by the app are labelled as such.
+- The unused time zone, archive days and delete days options are gone; the app passes `TZ`.
+- Web fixes: every parcel and order page is loaded (no stop at 1,000 / 500), the reader password
+  needs 10 characters, withdrawn expected deliveries are cleared, inside Home Assistant there is a
+  link to open the web UI in its own tab.
+- Amazon "Refund on order …" emails are recognised (rules 2.0.0-dev.10).
+
 ## 2.0.0-dev.20261124.3
 
 App only, same Open Parcels commit (`10d7e31`).
