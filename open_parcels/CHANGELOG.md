@@ -4,6 +4,17 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0-dev.20261125.1
+
+Open Parcels `e7d158f` (compare `fdb60e5...e7d158f`).
+
+- Automatic place lookup of scan names is opt-in for new installs (existing installs keep their
+  setting); the place search server, contact email and map tile servers can be changed in settings.
+- The map tile cache follows the tile servers' caching rules; "Report a map issue" link; the
+  satellite layer is marked non-commercial use only.
+- The web UI refreshes when a parcel is archived or an email starts a new order.
+- Many tests and clean-ups; three unused API endpoints removed (see the server's CHANGELOG.md).
+
 ## 2.0.0-dev.20261124.5
 
 Open Parcels `fdb60e5` (compare `5ca291c...fdb60e5`).
