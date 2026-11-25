@@ -4,6 +4,17 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0-dev.20261125.3
+
+Open Parcels `98694fe` (compare `3f1cffa...98694fe`). Pair with the Open Parcels integration 0.8.0.
+
+- **Breaking for API clients:** errors carry codes and values; connection states carry a reason
+  code instead of an English text; the setting source `app` is now `ha_app`; calendar entries carry
+  drop-off and cost instead of English detail lines (see the server's CHANGELOG.md).
+- More of the web UI in German: settings, carrier sign-in steps and forms, map layers, errors.
+- Accessibility checks on every page and better contrast; phone layout from 360 px.
+- The calendar feed follows `?lang=de` or the browser language.
+
 ## 2.0.0-dev.20261125.2
 
 Open Parcels `3f1cffa` (compare `e7d158f...3f1cffa`). Pair with the Open Parcels integration 0.7.0.

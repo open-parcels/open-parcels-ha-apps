@@ -3,7 +3,7 @@
 # HEALTHCHECK (the app's watchdog takes its place) and Tailscale (Home Assistant has its own app).
 # The base image is pinned by digest; bump it together with OPENPARCELS_REF.
 ARG NODE_IMAGE=node:26.13.1-slim@sha256:abe7e5a82b61a8ef67b315b85497c9e65173387ccf2f4a029248184b8e020be5
-ARG OPENPARCELS_REF=3f1cffac52ce93dc578d4e398c758598d1895ae6
+ARG OPENPARCELS_REF=98694fe28d1d43a8a4e921f0862c7cbadae2f1e4
 
 FROM ${NODE_IMAGE} AS build
 ARG OPENPARCELS_REF
