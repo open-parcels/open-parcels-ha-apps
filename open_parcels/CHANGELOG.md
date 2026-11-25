@@ -4,6 +4,15 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0-dev.20261125.4
+
+Open Parcels `542ed61` (compare `98694fe...542ed61`).
+
+- Smaller image: the server is bundled and npm is gone (about 347 MB → 283 MB on amd64).
+- "Add a connection" is a searchable picker with logos, like Home Assistant's "Add integration".
+- Token logins for clients without cookies, an allow-list for other web addresses (CORS), and a
+  sync API that also reports deletions (for the coming Android app and client libraries).
+
 ## 2.0.0-dev.20261125.3
 
 Open Parcels `98694fe` (compare `3f1cffa...98694fe`). Pair with the Open Parcels integration 0.8.0.
