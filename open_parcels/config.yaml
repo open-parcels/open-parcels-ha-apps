@@ -21,13 +21,13 @@ panel_title: Parcels
 ports:
   3000/tcp: null
 # The port description lives in translations/en.yaml.
-# Home Assistant restarts the app when the server stops answering (needs no open port and no auth).
+# Home Assistant restarts the HA app when the server stops answering (needs no open port and no auth).
 watchdog: http://[HOST]:[PORT:3000]/api/v1/health/ready
 # Announces the server to the Open Parcels integration (one-click setup).
 discovery:
   - open_parcels
-# Stop the app while Home Assistant backs it up: a copy of the live SQLite database (WAL mode) can
-# miss or tear the latest writes. The pause takes seconds and the app starts again by itself.
+# Stop the HA app while Home Assistant backs it up: a copy of the live SQLite database (WAL mode) can
+# miss or tear the latest writes. The pause takes seconds and the HA app starts again by itself.
 backup: cold
 # Caches refill themselves and database copies are backups already: keep them out of Home
 # Assistant backups.

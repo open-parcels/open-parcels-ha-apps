@@ -2,7 +2,7 @@ configuration:
   log_level:
     name: Log level
     description: >-
-      How much the server writes to the app's log. A value saved on Open Parcels' Settings page
+      How much the server writes to the HA app's log. A value saved on Open Parcels' Settings page
       wins until reset there.
   public_url:
     name: Public address
