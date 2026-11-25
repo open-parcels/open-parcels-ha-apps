@@ -4,6 +4,17 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0-dev.20261125.2
+
+Open Parcels `3f1cffa` (compare `e7d158f...3f1cffa`). Pair with the Open Parcels integration 0.7.0.
+
+- Automatic database backups (daily, newest 7 kept, private files) with a Backups card and
+  "Back up now"; a restore tool.
+- A rebuilt Status page and a health API; the version shown includes the commit.
+- The web UI in English and German (follows the browser, or Settings → Language).
+- Emails naming several tracking numbers in one sentence now give every parcel.
+- A carrier that asks to slow down is paused for every connection.
+
 ## 2.0.0-dev.20261125.1
 
 Open Parcels `e7d158f` (compare `fdb60e5...e7d158f`).
