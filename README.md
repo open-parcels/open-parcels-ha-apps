@@ -22,4 +22,9 @@ Or: **Settings → Apps → App store → ⋮ → Repositories**, add
 Each HA app version runs a pinned commit of Open Parcels. Home Assistant downloads a prebuilt image,
 so installing and updating take seconds; what changed is in each HA app's `CHANGELOG.md`.
 
+The HA app's image is published on Docker Hub as `bluscream1/open-parcels-ha-app`. To run Open
+Parcels outside Home Assistant, use the server image from Docker Hub, `bluscream1/open-parcels`;
+if Docker Hub has problems, the same image is mirrored on GHCR as
+`ghcr.io/open-parcels/open-parcels`.
+
 > **Status:** early development, `2.0.0-dev`. Expect breaking changes.

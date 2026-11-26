@@ -66,3 +66,10 @@ left out of backups; the caches refill themselves.
 The HA app does not include Open Parcels' built-in Tailscale. To reach Open Parcels from outside your
 home, use Home Assistant's own remote access (Home Assistant Cloud or the Tailscale app): the
 **Parcels** panel works through it.
+
+## Images
+
+Home Assistant downloads the HA app's image from Docker Hub (`bluscream1/open-parcels-ha-app`).
+Open Parcels outside Home Assistant (Docker, Unraid) uses the server image from Docker Hub,
+`bluscream1/open-parcels`; when Docker Hub has problems, the same image is mirrored on GHCR as
+`ghcr.io/open-parcels/open-parcels`.
