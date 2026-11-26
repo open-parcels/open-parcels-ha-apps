@@ -4,6 +4,31 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0-dev.20261125.5
+
+Open Parcels `34a60c0` (compare `542ed61...34a60c0`).
+
+- Added: returns of other shops, PayPal refunds matched to orders (rules 2.0.0-dev.17)
+- Added: "Read old emails again" on inboxes
+- Added: fallback services on your own network
+- Added: consumers and notification rules
+- Changed: Home Assistant import markers with an unkeyed fingerprint become adopted
+- Changed: themes, and the light/dark setting becomes the mode
+- Changed: DPD Germany, UPS, FedEx, USPS, Evri and Canada Post read their own emails (rules 2.0.0-dev.16)
+- Changed: Amazon, DHL and Hermes read their own emails (rules 2.0.0-dev.15)
+- Added: per-inbox sender check switch
+- Added: email routing to providers
+- Added: Amazon "Import history"; imported history is flagged, quiet and kept
+- Changed: cancelling a job drops its request in flight
+- Added: connection actions and jobs
+- Changed: the pool checks a finished sign-in's secret itself
+- Added: `OPENPARCELS_PROVIDER_ISOLATION` runs the built-in providers in a sandbox
+- Added: provider manifests; providers reach only the hosts they declare
+- Added: live events `token.used` and `health.changed`
+- Added: the inbox forms come from the server
+- Changed: faster lists at 10,000 parcels
+- Fixed: the v1 import's dry run on a fresh installation
+
 ## 2.0.0-dev.20261125.4
 
 Open Parcels `542ed61` (compare `98694fe...542ed61`).

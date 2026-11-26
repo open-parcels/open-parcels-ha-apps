@@ -5,7 +5,7 @@
 # app, so the on-demand download of the server's entrypoint is not shipped either).
 # The base image is pinned by digest; bump it together with OPENPARCELS_REF.
 ARG NODE_IMAGE=node:26.13.1-slim@sha256:abe7e5a82b61a8ef67b315b85497c9e65173387ccf2f4a029248184b8e020be5
-ARG OPENPARCELS_REF=542ed615c999dab0c3901f25f9e295a08edbc8de
+ARG OPENPARCELS_REF=34a60c0a29643b862281fdab29f6c6ef586b1a14
 
 FROM ${NODE_IMAGE} AS build
 ARG OPENPARCELS_REF
