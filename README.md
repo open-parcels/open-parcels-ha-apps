@@ -27,4 +27,4 @@ Parcels outside Home Assistant, use the server image from Docker Hub, `bluscream
 if Docker Hub has problems, the same image is mirrored on GHCR as
 `ghcr.io/open-parcels/open-parcels`.
 
-> **Status:** early development, `2.0.0-dev`. Expect breaking changes.
+> **Status:** runs Open Parcels `2.0.0`, the first release of the rewrite.

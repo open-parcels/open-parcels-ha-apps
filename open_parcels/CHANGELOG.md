@@ -4,6 +4,20 @@ Home Assistant shows this file when an update is offered. Each version names the
 commit it runs; the upstream history between two versions is on GitHub
 (`https://github.com/open-parcels/open-parcels/compare/<old>...<new>`).
 
+## 2.0.0.1
+
+Open Parcels `ea86927` (compare `34a60c0...ea86927`).
+
+Runs Open Parcels 2.0.0, the first release of the rewrite. The app keeps its data; nothing to do.
+
+- Fixed: Amazon "Import history" stopped at once (providers 1.0.3)
+- Fixed: Amazon reads the current orders page (providers 1.0.2)
+- Added: the Providers page, the registry and installs from git repositories
+- Changed: the built-in providers come from open-parcels-providers
+- Added: the parcel list is searched, sorted and counted by the server
+- Changed: the Status page's database error is a code
+- Fixed: dialogs announced a second page banner
+
 ## 2.0.0-dev.20261125.5
 
 Open Parcels `34a60c0` (compare `542ed61...34a60c0`).
